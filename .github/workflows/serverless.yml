@@ -3,8 +3,9 @@ name: Serverless Deployment
 # Triggers the action everty time there is a code push to the master branch
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 # Specify what jobs to run
 jobs:
